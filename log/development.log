@@ -1608,3 +1608,13 @@ puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.6) lib/puma/server.rb:472:in `process_client'
 puma (4.3.6) lib/puma/server.rb:328:in `block in run'
 puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/articles" for ::1 at 2020-11-16 16:18:32 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 4424)
+
+
